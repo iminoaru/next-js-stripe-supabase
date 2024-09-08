@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root  {
+		--background: 263 0% 95%;
+		--foreground: 263 0% 0%;
+		--card: 263 0% 90%;
+		--card-foreground: 263 0% 10%;
+		--popover: 263 0% 95%;
+		--popover-foreground: 263 95% 0%;
+		--primary: 263 28% 49%;
+		--primary-foreground: 0 0% 100%;
+		--secondary: 263 10% 70%;
+		--secondary-foreground: 0 0% 0%;
+		--muted: 225 10% 85%;
+		--muted-foreground: 263 0% 35%;
+		--accent: 225 10% 80%;
+		--accent-foreground: 263 0% 10%;
+		--destructive: 0 50% 30%;
+		--destructive-foreground: 263 0% 90%;
+		--border: 263 20% 50%;
+		--input: 263 20% 18%;
+		--ring: 263 28% 49%;
+		--radius: 0.75rem;
+	  }
+	  .dark  {
+		--background: 263 10% 5%;
+		--foreground: 263 0% 90%;
+		--card: 263 0% 0%;
+		--card-foreground: 263 0% 90%;
+		--popover: 263 10% 5%;
+		--popover-foreground: 263 0% 90%;
+		--primary: 263 28% 49%;
+		--primary-foreground: 0 0% 100%;
+		--secondary: 263 10% 10%;
+		--secondary-foreground: 0 0% 100%;
+		--muted: 225 10% 15%;
+		--muted-foreground: 263 0% 60%;
+		--accent: 225 10% 15%;
+		--accent-foreground: 263 0% 90%;
+		--destructive: 0 50% 30%;
+		--destructive-foreground: 263 0% 90%;
+		--border: 263 20% 18%;
+		--input: 263 20% 18%;
+		--ring: 263 28% 49%;
+		--radius: 0.75rem;
+	  }
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+.glowBox {
+	position: absolute;
+	top: calc(50% - 20px);
+	left: calc(50% - 20px);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff;
+}
